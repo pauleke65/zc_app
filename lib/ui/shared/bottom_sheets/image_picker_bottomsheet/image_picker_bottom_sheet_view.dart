@@ -52,9 +52,7 @@ class ImagePickerBottomSheet extends StatelessWidget {
                                     completer(SheetResponse(confirmed: true)),
                                 title: Center(
                                   child: Text('Photo Library',
-                                      style: !_dark
-                                          ? AppTextStyle.whiteSize18Bold
-                                          : AppTextStyle.darkGreySize20Bold),
+                                      style: AppTextStyle.darkGreySize20Bold),
                                 ),
                               ),
                               const Divider(
@@ -67,9 +65,7 @@ class ImagePickerBottomSheet extends StatelessWidget {
                                       SheetResponse(confirmed: false)),
                                   title: Center(
                                     child: Text('Take Photo',
-                                        style: !_dark
-                                            ? AppTextStyle.whiteSize20Bold
-                                            : AppTextStyle.darkGreySize20Bold),
+                                        style: AppTextStyle.darkGreySize20Bold),
                                   )),
                             ],
                           ),
@@ -85,9 +81,7 @@ class ImagePickerBottomSheet extends StatelessWidget {
                               },
                               title: Center(
                                 child: Text('Cancel',
-                                    style: _dark
-                                        ? AppTextStyle.whiteSize20Bold
-                                        : AppTextStyle.darkGreySize20Bold),
+                                    style: AppTextStyle.whiteSize20Bold),
                               )),
                         ),
                       ],

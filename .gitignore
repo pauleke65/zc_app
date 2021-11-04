@@ -25,6 +25,7 @@
 # Flutter/Dart/Pub related
 **/doc/api/
 **/ios/Flutter/.last_build_id
+**/ios/Podfile.lock
 .dart_tool/
 .fvm/flutter_sdk
 .vscode/settings.json
