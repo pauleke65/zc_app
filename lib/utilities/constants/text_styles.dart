@@ -134,7 +134,7 @@ class AppTextStyle {
     AppColors.whiteColor,
   );
   static TextStyle organizationNameText = _base(
-    19,
+    20,
     FontWeight.w800,
     AppColors.whiteColor.withOpacity(0.9),
   );

@@ -81,13 +81,9 @@ class OrganizationViewModel extends BaseViewModel {
 
   Future<void> onTap(OrganizationModel? org) async {
     try {
-      if (org!.id == currentOrgId) {
-        navigation.replaceWith(Routes.navBarView);
-        return;
-      }
       await checkSnackBarConnectivity();
 
-      await storageService.setString(StorageKeys.currentOrgId, org.id!);
+      await storageService.setString(StorageKeys.currentOrgId, org!.id!);
       await storageService.setString(
           StorageKeys.idInOrganization, org.userIdInOrg!);
       snackbar.showCustomSnackBar(

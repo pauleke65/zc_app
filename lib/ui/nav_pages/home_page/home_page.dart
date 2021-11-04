@@ -37,8 +37,8 @@ class HomePage extends StatelessWidget {
               InkWell(
                 onTap: () => vmodel.navigateToOrganization(),
                 child: Container(
-                  height: 25,
-                  width: 25,
+                  height: 30,
+                  width: 30,
                   decoration: BoxDecoration(
                     color: Colors.transparent,
                     borderRadius: BorderRadius.circular(5),
@@ -57,7 +57,7 @@ class HomePage extends StatelessWidget {
                         ),
                 ),
               ),
-              const SizedBox(width: 16),
+              const SizedBox(width: 12),
               Text(
                 vmodel.orgName,
                 style: AppTextStyle.organizationNameText,
